@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocerex - Groceri shop</title>
+    <link rel="shortcut icon" href="img/grocerex_logo-removebg-preview.png" type="image/x-icon">
+    <!-- font-awesome start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- font-awesome end-->
+    <!-- css plugin start -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- css plugin end -->
+    <!--css links start-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--css links end-->
+  </head>
+  <body>
+      <!-- header start -->
+    <header> 
+      <div class="container">
+        <nav class="navbar navbar-expand-lg h_nav">
+          <div class="container-fluid">
+            <div class="logo">
+              <a class="navbar-brand" href="#">
+                <img src="img/grocerex logo.png" alt="grocerex" class="w-100">
+             </a>
+             </div>     
+            <!-- toggler -->
+            <button class="navbar-toggler" herf="#offcanvasExample" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"  aria-controls="offcanvasExample">
+              <span class=""><i class="fa-solid fa-bars" ></i></span>
+            </button>
+            <!-- offcanvas -->
+            <div class="offcanvas offcanvas-start" tabindex="-1"  id="offcanvasExample" aria-labelledby="offcanvasExample">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExample"><img src="img/grocerex logo.png" alt="grocerex"></h5>
+                <button type="button" class="btn-close fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+              </div>
+              <!-- navbar -->
+              <div class="offcanvas-body off_nav">
+                  <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-3" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Hot deals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Page</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-3" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="user4">
+                    <button type="button" class="btn btn-primary position-relative"><i class="fa-solid fa-heart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1
+                       <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </button> 
+      
+                      <button type="button" class="btn btn-primary position-relative"><i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 3
+                       <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </button>
+                   </div>
+                  <!-- button -->
+                  <div class="user1">
+                    <ul class="m-0">
+                     <li>
+                       <a href="#"><i class="fa-solid fa-headset"></i>Support</a>
+                       <a href="#"><i class="fa-solid fa-user"></i>Account</a>
+                     </li>
+                    </ul>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+         <div class="row mt-1 mb-1">
+          <div class="col-lg-3 col-md-6">
+          <div class="dropdown mb-3">
+          <button class="btn btn-warning dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars menubar"></i>
+            All Category List
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Fresh Produce</a></li>
+            <li><a class="dropdown-item" href="#">GRAINS</a></li>
+            <li><a class="dropdown-item" href="#">MEAT/PROTEIN</a></li>
+            <li><a class="dropdown-item" href="#">DAIRY</a></li>
+            <li><a class="dropdown-item" href="#">BAKING GOODS</a></li>
+            <li><a class="dropdown-item" href="#">FREEZER</a></li>
+            <li><a class="dropdown-item" href="#">CANNED/DRIED GOODS</a></li>
+            <li><a class="dropdown-item" href="#">CONDIMENTS/SPICES</a></li>
+            <li><a class="dropdown-item" href="#">OILS/VINEGARS</a></li>
+            <li><a class="dropdown-item" href="#">SNACKS</a></li>
+            <li><a class="dropdown-item" href="#">GRAINS</a></li>
+            <li><a class="dropdown-item" href="#">MEAT/PROTEIN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 order-md-2 order-lg-1">
+        <form class="d-flex m-auto search_form" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-lg-2 col-md-6 order-md-1 order-lg-2">
+        <div class="user5">
+              <button type="button" class="btn btn-primary position-relative"><i class="fa-solid fa-heart"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1
+                 <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button> 
+                 <button type="button" class="btn btn-primary position-relative"><i class="fa-solid fa-cart-shopping"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 3
+                 <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </div>
+           </div>
+        </div>
+      </div>
+    </header>
+      <!-- header end -->
+      <!-- banner start -->
+      <section class="banner mt-3">
+        <div class="container">
+          <div class="row contant">
+            <div class="col-lg-2 col-md-2">
+              <div class="sell">
+                <img src="img/sell 1.png" alt="sell" class="w-100 mt-3">
+                <img src="img/sell 2.png" alt="sell" class="w-100 mt-3"> 
+                <img src="img/sell 3.png" alt="sell" class="w-100 mt-3"> 
+
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-10 mt-3 ">
+              <div class="gif">
+                <img src="img/banner.gif" alt="banner" class="w-100">
+              </div>
+               
+              
+          <!-- items end -->
+            <div class="col-lg-12">
+              <div class="autoplay item_carousel">
+                <div class="item">
+                  <div class="items">
+                    <img src="img/Onion.jpg" alt="items" class="w-100">
+                  </div>
+                  <h2 class="item_h2 m-0">Onion</h2>
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>Shop Now</a>
+                </div>
+                <div class="item">
+                  <div class="items">
+                    <img src="img/moida.jpg" alt="items" class="w-100">
+                  </div>
+                  <h2 class="item_h2 m-0">Moida</h2>
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>Shop Now</a>
+                </div>
+                <div class="item">
+                  <div class="items">
+                    <img src="img/egg.jpg" alt="items" class="w-100">
+                  </div>
+                  <h2 class="item_h2 m-0">Egg</h2>
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>Shop Now</a>
+                </div>
+                
+                <div class="item">
+                  <div class="items">
+                    <img src="img/oel.jpg" alt="items" class="w-100">
+                  </div>
+                  <h2 class="item_h2 m-0">Oil</h2>
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>Shop Now</a>
+                </div>
+              </div>
+            </div>
+            
+         <!-- items end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner end -->
+      <!-- Product start -->
+      <section class="Product">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/01.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Apple</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/02.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Banana</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/03.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Cookies</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/04.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Spread</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/06.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Bread</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div> 
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/07.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">fresh Bread</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/08.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Lemon</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-3">
+              <div class="box">
+                <div class="item_img">
+                  <img src="img/09.png" alt="fruit" class="w-100">
+                </div>
+                <h3 class="item_h3 m-0">Mix Fruits</h3>
+                <p class="item_p m-0"><s>$30</s><span>$25</span></p>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cards</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <!-- Product end -->
+      <!-- feature start -->
+      <section class="feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="f_box">
+                <div class="f_img">
+                  <img src="img/icon 1.png" alt="feature" class="w-100">
+                </div>
+                <h2 class="f_h2 m-0">Best Price & Offers</h2>
+                <p class="f_p m-0">Order $50 Or More</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="f_box">
+                <div class="f_img">
+                  <img src="img/icon 2.png" alt="feature" class="w-100">
+                </div>
+                <h2 class="f_h2 m-0">Free Delivary</h2>
+                <p class="f_p m-0">24/7 amazing services</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="f_box">
+                <div class="f_img">
+                  <img src="img/icon 3.png" alt="feature" class="w-100">
+                </div>
+                <h2 class="f_h2 m-0">Great Daily Deal</h2>
+                <p class="f_p m-0">When you sign up</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="f_box">
+                <div class="f_img">
+                  <img src="img/icon 1.png" alt="feature" class="w-100">
+                </div>
+                <h2 class="f_h2 m-0">Easy Returns</h2>
+                <p class="f_p m-0">Within 30 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- feature end -->
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+              <div class="f_1">
+                <div class="footer_logo">
+                  <img src="img/grocerex_logo-removebg-preview.png" alt="logo">
+                </div>
+                <div class="input-group mt-3 mb-3">
+                  <input type="email" class="input" id="Email" name="Email" placeholder="Enter your Email" >
+                  <input class="button--submit" value="Subscribe" type="submit">
+              </div>
+                <address>
+                  Address: 60-49 Road 11378 New York <br>
+                  Phone: +65 11.188.888 <br>
+                  Email: grocerex@gmail.com
+                </address>
+                <h5>Payment Accepted <img src="img/Payment_Accepted_1-removebg-preview.png" alt="peyment"></h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+              <div class="f_2">
+                <h3>Support</h3>
+              <p class="mb-0"><a href="#">Help Centre</a></p>
+              <p class="mb-0"><a href="#">Privacy Policy</a></p>
+              <p class="mb-0"><a href="#">Track Your Order</a></p>
+              <p class="mb-0"><a href="#">Terms & Conditions</a></p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="f_2">
+                <h3>Useful Links</h3>
+              <p class="mb-0"><a href="#">Home</a></p>
+              <p class="mb-0"><a href="#">About</a></p>
+              <p class="mb-0"><a href="#">Shop</a></p>
+              <p class="mb-0"><a href="#">Contact</a></p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="f_2">
+                <h3>Services</h3>
+              <p class="mb-0"><a href="#">Our Shop</a></p>
+              <p class="mb-0"><a href="#">Easy Returns</a></p>
+              <p class="mb-0"><a href="#">Secure Shopping</a></p>
+              <p class="mb-0"><a href="#">Delivery infomation</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom">
+            <p class="text-center m-0">Copyright ©2023 All rights reserved By <a href="index.html" class="text-decoration-none">Grocerex</a></p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      
+
+ 
+      
+  
+    <!--js links-->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+ 
